@@ -1,0 +1,84 @@
+========================================
+  RENDER.COM DEPLOYMENT - START HERE
+========================================
+
+You chose Render.com! Great choice - it's free forever.
+
+========================================
+  STEP 1: SETUP GITHUB (5 minutes)
+========================================
+
+Run this command:
+    SETUP_GITHUB.bat
+
+This will:
+- Initialize git repository
+- Commit your code
+- Give you commands to push to GitHub
+
+Then:
+1. Go to: https://github.com/new
+2. Create repository named "thazema"
+3. Make it Public
+4. Run the git commands shown
+
+========================================
+  STEP 2: DEPLOY TO RENDER (10 minutes)
+========================================
+
+1. Go to: https://render.com
+2. Sign up with GitHub
+3. Click "New +" → "Web Service"
+4. Connect your "thazema" repository
+5. Configure:
+   - Name: thazema
+   - Build: npm install
+   - Start: npm start
+   - Plan: Free
+6. Add environment variables:
+   - NODE_ENV = production
+   - JWT_SECRET = thazema-secret-key-2024-abebe
+7. Click "Create Web Service"
+8. Wait 5-10 minutes
+9. Copy your URL: https://thazema.onrender.com
+
+========================================
+  STEP 3: UPDATE APP (15 minutes)
+========================================
+
+1. Edit: client/src/config/api.js
+   - PRODUCTION_URL: 'https://thazema.onrender.com'
+   - USE_PRODUCTION: true
+
+2. Rebuild APK:
+   cd client
+   npm run build
+   cd ..
+   npx cap copy android
+   npx cap open android
+
+3. In Android Studio: Build → Build APK
+
+4. Install on phone and test!
+
+========================================
+  DETAILED GUIDES:
+========================================
+
+- RENDER_QUICK_START.md (Quick overview)
+- RENDER_DEPLOYMENT_STEPS.md (Detailed steps)
+- DEPLOY_PUBLIC_SERVER.md (All options)
+
+========================================
+  SUPPORT:
+========================================
+
+Administrator: Abebe Mesfin
+Phone: +251 914 319 514
+Email: abebemesfin53@gmail.com
+
+========================================
+
+Ready to start? Run: SETUP_GITHUB.bat
+
+========================================
