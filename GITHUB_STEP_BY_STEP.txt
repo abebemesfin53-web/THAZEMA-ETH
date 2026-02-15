@@ -1,0 +1,192 @@
+========================================
+  CONNECT TO GITHUB - STEP BY STEP
+========================================
+
+STEP 1: CREATE GITHUB ACCOUNT
+========================================
+
+1. Open browser and go to:
+   https://github.com/join
+
+2. Fill in:
+   - Email: abebemesfin53@gmail.com (or your email)
+   - Password: (create a strong password)
+   - Username: (choose a username, e.g., "abebemesfin")
+
+3. Click "Create account"
+
+4. Verify your email
+
+✅ Done! You have a GitHub account.
+
+========================================
+STEP 2: CREATE REPOSITORY
+========================================
+
+1. Go to:
+   https://github.com/new
+
+2. Fill in:
+   - Repository name: thazema
+   - Description: Thazema - Real-time video and audio calling app
+   - Visibility: Public (select this)
+   
+3. DON'T check any boxes:
+   - DON'T add README
+   - DON'T add .gitignore
+   - DON'T add license
+
+4. Click "Create repository"
+
+✅ Done! Repository created.
+
+Keep this page open - you'll need it!
+
+========================================
+STEP 3: GET PERSONAL ACCESS TOKEN
+========================================
+
+GitHub needs a token (not password) for command line.
+
+1. Go to:
+   https://github.com/settings/tokens
+
+2. Click "Generate new token" → "Generate new token (classic)"
+
+3. Fill in:
+   - Note: Thazema Deployment
+   - Expiration: No expiration
+   - Scopes: Check "repo" (full repository access)
+
+4. Click "Generate token"
+
+5. COPY THE TOKEN! It looks like:
+   ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+6. Save it somewhere safe (you'll need it soon)
+
+✅ Done! Token created.
+
+========================================
+STEP 4: PUSH CODE TO GITHUB
+========================================
+
+In your terminal (where SETUP_GITHUB.bat is running):
+
+1. Enter your GitHub username when asked:
+   Enter your GitHub username: YOUR_USERNAME
+   (Press Enter)
+
+2. The script will prepare your code
+
+3. You'll see commands. Run them one by one:
+
+   Command 1:
+   git remote add origin https://github.com/YOUR_USERNAME/thazema.git
+   (Press Enter)
+
+   Command 2:
+   git branch -M main
+   (Press Enter)
+
+   Command 3:
+   git push -u origin main
+   (Press Enter)
+
+4. When asked for credentials:
+   Username: YOUR_GITHUB_USERNAME
+   Password: PASTE_YOUR_TOKEN_HERE
+   (Use the token from Step 3, not your password!)
+
+5. Wait for upload (may take 1-2 minutes)
+
+✅ Done! Code is on GitHub.
+
+========================================
+STEP 5: VERIFY
+========================================
+
+1. Go to:
+   https://github.com/YOUR_USERNAME/thazema
+
+2. You should see all your files:
+   - client/
+   - server/
+   - android/
+   - package.json
+   - etc.
+
+✅ Success! Your code is on GitHub!
+
+========================================
+EASIER METHOD: GITHUB DESKTOP
+========================================
+
+If command line is too difficult:
+
+1. Download GitHub Desktop:
+   https://desktop.github.com
+
+2. Install and login
+
+3. File → Add Local Repository
+   Choose: M:\aaaaaaaa\apk\websyit project
+
+4. Click "Publish repository"
+   - Name: thazema
+   - Uncheck "Keep this code private"
+   - Click "Publish"
+
+✅ Much easier!
+
+========================================
+NEXT: DEPLOY TO RENDER.COM
+========================================
+
+After code is on GitHub:
+
+1. Go to: https://render.com
+2. Sign up with GitHub
+3. Create Web Service
+4. Connect your "thazema" repository
+5. Deploy!
+
+See: RENDER_QUICK_START.md for details
+
+========================================
+TROUBLESHOOTING
+========================================
+
+Problem: "Authentication failed"
+Solution: Use token, not password
+         Get token at: https://github.com/settings/tokens
+
+Problem: "Git not found"
+Solution: Install Git from: https://git-scm.com/download/win
+         Restart terminal and try again
+
+Problem: "Repository already exists"
+Solution: Delete repository on GitHub and create new one
+
+========================================
+IMPORTANT LINKS
+========================================
+
+Create Account: https://github.com/join
+New Repository: https://github.com/new
+Personal Tokens: https://github.com/settings/tokens
+GitHub Desktop: https://desktop.github.com
+
+========================================
+SUPPORT
+========================================
+
+Administrator: Abebe Mesfin
+Phone: +251 914 319 514
+Email: abebemesfin53@gmail.com
+
+========================================
+
+Read detailed guide: CONNECT_GITHUB_SIMPLE.md
+
+========================================
